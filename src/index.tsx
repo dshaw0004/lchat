@@ -1,16 +1,16 @@
-import React from "react";
 import { createRoot } from "react-dom/client";
-
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./i18n";
+import "./index.css";
 
 const container = document.getElementById("root") as HTMLElement;
 const root = createRoot(container);
 
 root.render(
-  <React.StrictMode>
-    <React.Suspense fallback="loading">
-      <App />
-    </React.Suspense>
-  </React.StrictMode>
+	<>
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</>
 );

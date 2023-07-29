@@ -1,0 +1,52 @@
+.homepage {
+	height: 100vh;
+	height: 100dvh;
+	display: grid;
+
+	grid-template-areas:
+		"navbar navbar"
+		"maincontent mancontent"
+		"maincontent mancontent"
+		"maincontent mancontent"
+		"maincontent mancontent"
+		"maincontent mancontent"
+		"maincontent mancontent"
+		"maincontent mancontent"
+		"maincontent mancontent"
+		"maincontent mancontent";
+}
+.homepage .maincontent {
+	display: grid;
+	place-items: center;
+	grid-area: maincontent;
+	width: 100%;
+	justify-self: center;
+}
+.authenticationLinks {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	column-gap: 2ch;
+}
+.firstNavBar {
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 1em;
+	align-items: center;
+	background-color: #fafaff;
+	width: 100%;
+	box-sizing: border-box;
+	grid-area: navbar;
+}
+.firstNavBar strong {
+	font-size: x-large;
+}
+.authenticationLinks li {
+	background-color: cyan;
+	border-radius: 1em;
+	padding: 0.5ch 1ch;
+	color: blueviolet;
+}
+.authenticationLinks li a {
+	color: inherit;
+}
